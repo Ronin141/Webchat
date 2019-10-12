@@ -11,7 +11,11 @@ const Header = ({ closeWebchat, preferences, logoStyle }) => (
       backgroundColor: preferences.accentColor,
     }}
   >
-    <img className='RecastAppHeader--logo CaiAppHeader--logo' src={preferences.headerLogo} style={logoStyle} />
+    <img
+      className='RecastAppHeader--logo CaiAppHeader--logo'
+      src={preferences.headerLogo}
+      style={logoStyle}
+    />
 
     <div className='RecastAppHeader--title CaiAppHeader--title'>{preferences.headerTitle}</div>
 

@@ -10,7 +10,7 @@ export const PrevArrow = ({ className, style, onClick }) => (
     style={{ ...style }}
     onClick={onClick}
   >
-    <img src="https://cdn.cai.tools.sap/webchat/arrow-back.svg" className="arrowSvg" />
+    <img src='https://cdn.cai.tools.sap/webchat/arrow-back.svg' className='arrowSvg' />
   </div>
 )
 
@@ -20,7 +20,7 @@ export const NextArrow = ({ className, style, onClick }) => (
     style={{ ...style }}
     onClick={onClick}
   >
-    <img src="https://cdn.cai.tools.sap/webchat/arrow-forward.svg" className="arrowSvg" />
+    <img src='https://cdn.cai.tools.sap/webchat/arrow-forward.svg' className='arrowSvg' />
   </div>
 )
 

@@ -20,8 +20,11 @@ const Button = ({ button, sendMessage }) => {
   case 'web_url':
     content = (
       <a
-        className='RecastAppButton-Link CaiAppButton-Link' href={value} target='_blank'
-        rel='noopener noreferrer'>
+        className='RecastAppButton-Link CaiAppButton-Link'
+        href={value}
+        target='_blank'
+        rel='noopener noreferrer'
+      >
         {formattedTitle}
       </a>
     )

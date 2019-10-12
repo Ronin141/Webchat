@@ -1,4 +1,5 @@
-.RecastApp, .CaiApp {
+.RecastApp,
+.CaiApp {
   z-index: 2147483647;
 }
 
@@ -16,7 +17,8 @@
   font-family: 'Roboto', Helvetica, sans-serif;
 }
 
-.RecastApp a, .CaiApp a {
+.RecastApp a,
+.CaiApp a {
   text-decoration: underline;
   cursor: pointer;
 

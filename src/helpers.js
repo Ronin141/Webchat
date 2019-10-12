@@ -8,7 +8,7 @@ export const truncate = (string, length) => {
   return `${string.slice(0, length - 3)}...`
 }
 
-export const getCredentialCookieName = (channelId) => {
+export const getCredentialCookieName = channelId => {
   return `cai-conversation-${channelId}`
 }
 
@@ -18,7 +18,7 @@ export const storeCredentialsInCookie = (chatId, conversationId, timeToLive, cha
   Cookies.set(cookieName, JSON.stringify(payload), { expires: 3600 * timeToLive })
 }
 
-export const getCredentialsFromCookie = (channelId) => {
+export const getCredentialsFromCookie = channelId => {
   const cookieName = getCredentialCookieName(channelId)
   let credentials = Cookies.get(cookieName)
 

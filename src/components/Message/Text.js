@@ -56,10 +56,7 @@ const Text = ({ content, style, isMarkdown }) => {
   return (
     <div style={style} className={'RecastAppText CaiAppText'}>
       {isMarkdown ? (
-        <ReactMarkdown
-          source={compiledResponse}
-          allowedTypes={allowedMarkdownTypes}
-        />
+        <ReactMarkdown source={compiledResponse} allowedTypes={allowedMarkdownTypes} />
       ) : (
         compiledResponse
       )}

@@ -14,14 +14,17 @@ const ListElement = ({ title, subtitle, imageUrl, buttons, sendMessage }) => {
 
   return (
     <div className='RecastAppListElement CaiAppListElement'>
-      {imageUrl
-        && sanitizeUrl(imageUrl) !== 'about:blank' && (
+      {imageUrl && sanitizeUrl(imageUrl) !== 'about:blank' && (
         <img src={imageUrl} className='RecastAppListElement--img CaiAppListElement--img' />
       )}
 
       <div className='RecastAppListElement--container CaiAppListElement--container'>
-        <p className='RecastAppListElement--title CaiAppListElement--title'>{truncate(title, titleMaxLength)}</p>
-        <p className='RecastAppListElement--subtitle CaiAppListElement--subtitle'>{truncate(subtitle, subTitleMaxLength)}</p>
+        <p className='RecastAppListElement--title CaiAppListElement--title'>
+          {truncate(title, titleMaxLength)}
+        </p>
+        <p className='RecastAppListElement--subtitle CaiAppListElement--subtitle'>
+          {truncate(subtitle, subTitleMaxLength)}
+        </p>
 
         {button
           && (button.type === 'web_url' ? (

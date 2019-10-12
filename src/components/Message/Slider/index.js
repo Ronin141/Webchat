@@ -85,14 +85,12 @@ class Slider extends Component {
           this.container = ref
         }}
       >
-        {canPrevious
-          && arrows && (
+        {canPrevious && arrows && (
           <div className='arrow left' onClick={this.onClickPrevious}>
             {prevArrow}
           </div>
         )}
-        {canNext
-          && arrows && (
+        {canNext && arrows && (
           <div className='arrow right' onClick={this.onClickNext}>
             {nextArrow}
           </div>
